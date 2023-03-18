@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ak Yag</title>
+    <link rel="stylesheet" href="css/style.css?v=6" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <span class="open-slide">
+        <a style="margin-top: 10px" href="#" onclick="openSideMenu()">
+          <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="white" stroke-width="5" />
+            <path d="M0,14 30,14" stroke="white" stroke-width="5" />
+            <path d="M0,23 30,23" stroke="white" stroke-width="5" />
+          </svg>
+        </a>
+      </span>
+      <ul class="navbar-nav">
+        <li><img src="img/logo1.png" alt="Logo" /></li>
+      </ul>
+    </nav>
+    <div id="side-menu" class="side-nav">
+      <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+      <a href="index.html">Главная</a>
+      <a href="#">Товары</a>
+      <a href="#" id="btnContact">Контакты</a>
+    </div>
+
+    <div id="main">
+      <div class="coupon_content" id="coupon_content">
+        <div class="coupon" id="goods">
+          <img src="img/zawod.png" alt="Avatar" class="img_coupon" />
+          <div class="container" style="background-color: white">
+            <p style="font-size: 14px; color: darkorange">
+              Биг-Беги полипропиленовый
+            </p>
+            <p style="font-size: 14px">Ширина: 75/95/120см</p>
+            <p style="font-size: 14px">В упаковке: 500-1000 штук</p>
+            <p style="font-size: 14px">Цвет: белый/синий</p>
+            <p style="font-size: 14px"><b>Цена: 3$</b></p>
+          </div>
+        </div>
+        <div class="coupon" id="goods">
+          <img src="img/zawod.png" alt="Avatar" class="img_coupon" />
+          <div class="container" style="background-color: white">
+            <p style="font-size: 14px; color: darkorange">
+              Мешок полипропиленовый
+            </p>
+            <p style="font-size: 14px">Ширина: 75/95/120см</p>
+            <p style="font-size: 14px">В упаковке: 500-1000 штук</p>
+            <p style="font-size: 14px">Цвет: белый/синий</p>
+            <p style="font-size: 14px"><b>Цена: 2$</b></p>
+          </div>
+        </div>
+        <div class="coupon" id="goods">
+          <img src="img/zawod.png" alt="Avatar" class="img_coupon" />
+          <div class="container" style="background-color: white">
+            <p style="font-size: 14px; color: darkorange">
+              Биг-Беги полипропиленовый
+            </p>
+            <p style="font-size: 14px">Ширина: 75/95/120см</p>
+            <p style="font-size: 14px">В упаковке: 500-1000 штук</p>
+            <p style="font-size: 14px">Цвет: белый/синий</p>
+            <p style="font-size: 14px"><b>Цена: 4$</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Наши Контакты</h2>
+        </div>
+        <div class="modal-body">
+          <p>Менеджер по продажам:</p>
+          <p>тел: +993 61 626234</p>
+          <p>тел: +993 61 026610</p>
+          <br />
+          <p>E-mail:</p>
+          <p>parahat.g@mail.ru</p>
+          <p>govher.muhammetorazova@gmail.com</p>
+          <br />
+          <p>Ежедневно: с 09:00 до 18:00</p>
+          <p>С понедельника по субботу</p>
+          <p>Воскресенье: выходной</p>
+        </div>
+        <div class="modal-header">
+          <h2>Наш Адрес</h2>
+        </div>
+        <div class="modal-body">
+          <p>Туркменистан Ашхабад,</p>
+          <p>этр. Багтыярлык,</p>
+          <p>ул.Гахрыман Туркменистана А.Ниязов, дом 391</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <img src="img/logo1.png" alt="Logo" />
+      <div class="footer_content">
+        <div class="address">
+          <p>АДРЕСС:</p>
+          <p>Туркменистан Ашхабад,</p>
+          <p>этр. Багтыярлык, ул.</p>
+          <p>Гахрыман Туркменистана А.Ниязов, 391</p>
+        </div>
+        <div class="phones">
+          <p>КОНТАКТ:</p>
+          <p>тел: +993 61 626234</p>
+          <p>тел: +993 61 026610</p>
+          <p>E-mail: parahat.g@mail.ru</p>
+        </div>
+        <div class="working">
+          <p>РЕЖИМ РАБОТЫ:</p>
+          <p>Ежедневно: с 09:00 до 18:00</p>
+          <p>С понедельника по субботу</p>
+          <p>Воскресенье: выходной</p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    function openSideMenu() {
+      document.getElementById("side-menu").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    function closeSideMenu() {
+      document.getElementById("side-menu").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("btnContact");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function () {
+      modal.style.display = "block";
+    };
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    };
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+
+  <script>
+    const observer = new IntersectionObserver(
+      (intersections) => {
+        intersections.forEach(({ target, isIntersecting }) => {
+          target.classList.toggle("animate", isIntersecting);
+        });
+      },
+      {
+        threshold: 0,
+      }
+    );
+
+    document.querySelectorAll(".box").forEach((div) => {
+      observer.observe(div);
+    });
+  </script>
+</html>
