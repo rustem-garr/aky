@@ -266,6 +266,7 @@ body{
 .modal {
     display: none;
     /* Hidden by default */
+    font-size:12px;
     position: fixed;
     /* Stay in place */
     z-index: 1;
@@ -358,6 +359,7 @@ body{
     text-align: center;
     color: white;
     padding:10px;
+    font-size: 12px;
 }
 
 .footer_content{
