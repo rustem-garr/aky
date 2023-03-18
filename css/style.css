@@ -353,6 +353,11 @@ body{
     color:black;
 }
 
+.inline-icon {
+    vertical-align: bottom;
+    font-size: 20px !important;
+}
+
 .footer {
     width: 100%;
     background-color: black;
@@ -360,6 +365,7 @@ body{
     color: white;
     padding:10px;
     font-size: 12px;
+    font-weight:700;
 }
 
 .footer_content{
@@ -368,15 +374,19 @@ body{
 
 .address {
     width: 30%;
-    margin-left: 5%;
+    margin-left: 8%;
+    text-align:left;
 }
 
 .phones {
     width: 30%;
+    text-align: left;
+    margin-left:5%;
 }
 
 .working {
     width: 30%;
+    text-align: left;
 }
 
 @media (max-width:600px){    
